@@ -9,6 +9,7 @@ header{
     justify-content: space-between;
     padding: 10px 30px;
     margin-bottom: 30px;
+    border-bottom: 1px solid rgb(199, 199, 199);
 }
 
 .Logo img{
@@ -39,12 +40,15 @@ header{
     list-style: none;
     align-items: center;
     text-align: center;
+    opacity: 0.8;
+    margin-top: 8px;
 
 }
 
 .Menu ul img{
-    width: 30px;
-    height: 25px;
+    width: 26px;
+    height: 20px;
+ 
 }
 
 .Menu ul li{
@@ -80,6 +84,26 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: row;
+
+}
+
+
+#Cercle_Image{
+    display: flex;
+    justify-content: center;
+  
+    position: absolute;
+        top: 73%;
+        right: 35%
+
+}
+
+#Cercle_Image img{
+    width: 15px ;
+    height: 15px;
+    margin: 0px 8px;
+    cursor: pointer;
+
 
 }
 .section1{
@@ -243,7 +267,8 @@ main{
 
 .secThree img{
     width: 20px;
-    padding: 10px 10px ;
+    margin: 10px 10px ;
+    cursor: pointer;
 }
 
 footer{
@@ -274,6 +299,9 @@ footer ul a{
 
 footer p{
     color: white;
+    opacity: 0.8;
+    cursor:not-allowed;
+    user-select: none;
 }
 
 
