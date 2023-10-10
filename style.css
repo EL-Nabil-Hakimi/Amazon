@@ -25,10 +25,11 @@ header{
 .Logo input{
     height: 30px;
     width: 300px;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 0.1px solid black;
     margin-left: 20px;
     padding: 0px 10px;
+    opacity: 0.5;
 }
 
 
@@ -79,6 +80,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: row;
+
 }
 .section1{
     display: flex;
@@ -109,7 +111,7 @@ main{
     width: 200px ;
     align-items: center;
     justify-content: center;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 .section2{
@@ -134,6 +136,8 @@ main{
     color: rgb(75, 75, 75);
     margin-left: 20px;
     display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
 
 
     
@@ -141,16 +145,75 @@ main{
 #RemiseText{
     margin-bottom: 30px;
     margin-top: 40px;
+    margin-left: 50px;
     color: gray;
+
+
 }
 .Products{
     margin-right: 20px;
-    width: 200px;
+    width: 300px;
     padding: 2px 2px;
-    background-color: rgb(241, 241, 241);
+    background-color: #F1F5F9;
     border-radius: 5px;
     justify-content: center;
+    margin-bottom: 20px ;
+    padding-bottom: 20px ;
     
+    
+}
+#star {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    align-items: center;
+    background-color: #FACC15;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px 0px;
+    cursor: pointer;
+    color: white;
+}
+#star img{
+    width: 20px ;
+    height: 20px;
+}
+
+.infoPro1{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+
+}
+
+#sold{
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-left: 1px solid black;
+
+
+} 
+
+#sold p{
+    padding: 6px 0px;
+    opacity: 0.6;
+
+}
+
+.Add_Card{
+    background-color: #FACC15;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 5px;
+    cursor: pointer;
+
+
 }
 
     .Products span{
@@ -163,3 +226,54 @@ main{
     width: 100%;
     
 }
+
+
+.Products h3 , .Products p{
+    margin-left: 20px;
+}
+
+
+.secThree{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.secThree img{
+    width: 20px;
+    padding: 10px 10px ;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #334155;
+    padding: 20px;
+
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+
+}
+footer ul li{
+    padding: 10px 20px;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: white;
+
+}
+
+footer p{
+    color: white;
+}
+
+
