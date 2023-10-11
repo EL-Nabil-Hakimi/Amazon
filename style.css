@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
- 
+
 }
 
 header{
@@ -75,11 +75,12 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-   
-
+    margin: 0px 20px;
     
 }
+
+
+
 .secOne{
     display: flex;
     justify-content: center;
@@ -94,7 +95,7 @@ main{
   
     position: absolute;
         top: 73%;
-        right: 35%
+        right: 34%
 
 }
 
@@ -106,6 +107,7 @@ main{
 
 
 }
+
 .section1{
     display: flex;
     width: 20%;
@@ -149,7 +151,25 @@ main{
     
     
 }
+#secScroll{
+    display: flex;
+    justify-content: center;
+  
+    width: 100%;
 
+}
+
+.ProductAll1{
+    color: rgb(75, 75, 75);
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+
+  
+}
 .secTwo{
     display: flex;
     justify-content: center;
@@ -160,9 +180,9 @@ main{
     color: rgb(75, 75, 75);
     margin-left: 20px;
     display: flex;
-    flex-wrap:wrap;
     justify-content: center;
-
+    flex-wrap: wrap;
+ 
 
     
 }
@@ -183,6 +203,7 @@ main{
     justify-content: center;
     margin-bottom: 20px ;
     padding-bottom: 20px ;
+    cursor: pointer;
     
     
 }
@@ -239,6 +260,7 @@ main{
 
 
 }
+
 
     .Products span{
         text-decoration:line-through;
