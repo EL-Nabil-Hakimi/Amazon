@@ -50,16 +50,20 @@
     opacity: 0.8;
 
 }
-.textsherch span
+.textsherch span{
+    color: #CA8A04;
+
+}
 #pet-select{
     border-radius: 2px;
     border: none;
     margin-left: 10px;
     
+    
 }
 .sectionPage1_2 article div{
     display: inherit;
-    opacity: 0.8;}
+   }
 
 
     .freeShipping{
@@ -68,7 +72,10 @@
         opacity: 0.8;
         color: rgb(75, 75, 75);
     }
-
+.freeShipping h4{
+    color: #FACC15;
+    cursor: pointer;
+}
 
     .freeShipping article{
         display: flex;
@@ -86,6 +93,8 @@
         margin-left: 5px;
 
     }
+
+    
 
     .freeShipping h4{
         padding: 5px 15px;
