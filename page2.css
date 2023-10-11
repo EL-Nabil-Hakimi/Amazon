@@ -1,0 +1,140 @@
+ main{ 
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 20vw 80vw;
+    margin: 10px 10px ;
+}
+
+.sectionPage1_1{
+
+   width: 20vw;
+   display: flex;
+    align-items: center;
+    flex-direction: column;
+   padding-top: 70px;
+}
+.All_Check{
+    margin-top: 20px;
+    opacity: 0.8;
+}
+.All_Check div{
+    display: flex;
+
+}
+
+.All_Check div input{
+        margin: 0px 10px;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 30px;
+}
+.checkbox p{
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sectionPage1_2{
+
+  width: 80vw;
+
+}
+.sectionPage1_2 .textsherch{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px ;
+    opacity: 0.8;
+
+}
+.textsherch span
+#pet-select{
+    border-radius: 2px;
+    border: none;
+    margin-left: 10px;
+    
+}
+.sectionPage1_2 article div{
+    display: inherit;
+    opacity: 0.8;}
+
+
+    .freeShipping{
+        display: flex;
+        justify-content: space-around;
+        opacity: 0.8;
+        color: rgb(75, 75, 75);
+    }
+
+
+    .freeShipping article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px;
+        border-radius: 50px;
+        border: 1px rgb(129, 129, 129) solid;
+        cursor: pointer;
+    }
+
+    .freeShipping article img{
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+
+    }
+
+    .freeShipping h4{
+        padding: 5px 15px;
+    }
+
+
+    #secProd1{
+        display: grid;
+        grid-template-columns: 30% 30% 30%; 
+        justify-content: center;
+
+    }
+    .ProductsPage2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2px 5px;
+        width: 300px;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        background-color: #F1F5F9;
+       
+
+    }
+
+    .ProductsPage2 p ,  .ProductsPage2 h3{
+        margin-left: 10px;
+        
+    }
+
+    #sold{
+        margin-left: 15px;
+        padding-left: 10px;
+    }
+
+
+
+    #imgCercle{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px;
+        
+    } 
+
+
+    #imgCercle img{
+        width: 20px;
+        height:20px;
+        padding: 0px 5px;
+        cursor: pointer;
+    }

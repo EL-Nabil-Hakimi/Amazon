@@ -25,7 +25,7 @@ header{
 }
 .Logo input{
     height: 30px;
-    width: 300px;
+    width: 400px;
     border-radius: 3px;
     border: 0.1px solid black;
     margin-left: 20px;
@@ -169,6 +169,19 @@ main{
 
 
   
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+a span{
+    color: #334155;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    opacity: 0.7;
 }
 .secTwo{
     display: flex;
@@ -324,6 +337,7 @@ footer p{
     opacity: 0.8;
     cursor:not-allowed;
     user-select: none;
+justify-content:center;
 }
 
 
