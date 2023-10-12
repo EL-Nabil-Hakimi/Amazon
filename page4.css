@@ -1,0 +1,143 @@
+#mainPage4{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+#sec1Page4{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+  
+ 
+    
+
+}
+#dvImage1 img {
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+#divHeader div{
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    
+
+}
+
+#artct2Page4{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+#dvImage1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+
+}
+
+#dvImage1 input{
+    margin-right: 1em;
+
+}
+
+#divLeft{
+    display: flex;
+    padding: 10px 5px;
+   
+}
+
+#divRight #del img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    opacity: 0.4;
+}
+
+#add-u{
+    display: flex;
+
+}
+
+#add-u p{
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 20px;
+
+    
+}
+
+#P1{
+    background-color: #CFCFCF;
+    color: white;
+}
+
+#P3{
+    background-color:#FACC15;
+    color: white;
+}
+
+#select1{
+    padding: 5px 5px;
+    background-color: #F1F1F1;
+    margin: 5px 0px;
+    border-radius: 50px;
+}
+
+#ALL_PROD{
+    width: 90%;
+}
+#secDetails{
+    margin-left: 3em;
+    width: 80%;
+    border: 1px solid black;
+    
+}
+
+#detailsPrice div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#Sammary{
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+}
+
+#detailsPrice{
+    padding: 10px 10px;
+}
+#detailsPrice div{
+    margin-bottom: 20px;
+}
+#detailsPrice button{
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    background-color: #34D399;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#lastDiv{
+    flex-direction: column;
+}
+
+#lastDiv h5{
+    margin-left: 2em;
+}
