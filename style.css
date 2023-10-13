@@ -343,4 +343,73 @@ footer p{
 justify-content:center;
 }
 
+#fltr{
+    display: none;
+    
+}
+#checkbox1{
+    display: none;
+}
 
+@media (max-width:1200px){
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+    }
+    header .Logo{
+        margin-bottom: 20px;
+    }
+    .Menu ul{
+        justify-content: center;
+    }
+    
+    .secOne{
+        grid-template-columns: 100%;
+        width: 100%;
+       
+    }
+    .section1{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2 img{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .section1{
+        display: none;
+        margin-left: 40px;
+        transition: 0.8s ease;
+    }
+    
+    #fltr{
+        display: block;
+        width: 100%;
+        
+    }
+
+    #fltr button{
+        width: 100%;
+        height: 35px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ddb30c;
+        opacity: 0.8;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #fltr button:checked + .section1{
+            display: block;
+       
+    }
+    
+    
+}

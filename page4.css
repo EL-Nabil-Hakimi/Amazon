@@ -141,3 +141,14 @@
 #lastDiv h5{
     margin-left: 2em;
 }
+
+
+@media (max-width:1200px){
+    #mainPage4{
+        grid-template-columns: 100%;
+    }
+
+    #sec1Page4{
+        margin-bottom: 20px;
+    }
+}
