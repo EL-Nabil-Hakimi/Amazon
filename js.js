@@ -8,3 +8,16 @@ else{
     maDiv.style.display = "block";
     
 }}
+
+
+
+
+function showDivShow() {
+    var Div2 =document.getElementById("showShipping");
+    if(Div2.style.display === "block"){
+        Div2.style.display = "none";
+    }
+    else{
+        Div2.style.display = "block";
+        
+    }}

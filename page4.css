@@ -151,4 +151,9 @@
     #sec1Page4{
         margin-bottom: 20px;
     }
+
+    #secDetails{
+        width: 100%;
+        margin-left: 0px;
+    }
 }

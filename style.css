@@ -242,10 +242,12 @@ a span{
 }
 
 .infoPro1{
-    display: flex;
+    display: grid;
     width: 100%;
+    grid-template-columns: 30% 30% 30%;
     justify-content: start;
     align-items: center;
+    gap: 20px;
 
 }
 
@@ -382,8 +384,13 @@ justify-content:center;
     }
     .section1{
         display: none;
-        margin-left: 40px;
         transition: 0.8s ease;
+        width: 100%;
+    }
+
+    .section1 .article1{
+        width: 100%;
+        margin-left: 0px;
     }
     
     #fltr{
