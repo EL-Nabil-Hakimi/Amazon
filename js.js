@@ -21,3 +21,13 @@ function showDivShow() {
         Div2.style.display = "block";
         
     }}
+
+function hideenSectionPage2(){
+    var sec = document.getElementById("sectionPage1");
+    if(sec.style.display === "grid"){
+        sec.style.display = "none";
+    }
+    else{
+        sec.style.display = "grid";
+    }
+}
