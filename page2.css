@@ -168,7 +168,7 @@
 
         .sectionPage1_1{
             width: 100%;
-            display: grid;
+            display: none;
             gap: 20px;
             grid-template-columns: 30vw 30vw;
             justify-content: center;
