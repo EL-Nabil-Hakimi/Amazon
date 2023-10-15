@@ -403,3 +403,26 @@ input[type=range]::-webkit-slider-thumb{
     width: 19px;
 }
 
+
+@media (max-width:1200px){
+    #InfoProduct{
+        grid-template-columns: 100vw;
+    }
+
+    #textProductwithImage{
+        grid-template-columns: 100vw;
+    }
+
+    #secComment{
+        grid-template-columns: 100vw;
+       
+    }
+
+    #artcl4{
+        justify-content: center;
+    }
+
+    .slide_Custom{
+        justify-content: center;
+    }
+}
