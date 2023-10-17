@@ -79,15 +79,16 @@
     
 }
 
-#P1{
+.P1{
     background-color: #CFCFCF;
     color: white;
 }
 
-#P3{
+.P3{
     background-color:#FACC15;
     color: white;
 }
+
 
 #select1{
     padding: 5px 5px;
