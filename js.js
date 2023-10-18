@@ -86,5 +86,40 @@ function RemoveNumber3(){
 }
 }
 
+var Product = 0;
+function n_Product(){
+    Product++;
+    document.getElementById("NrProduct").innerHTML = Product;
 
+
+    if(Product >1){
+    var divAAjouter = document.getElementById("Panning_Div");
+    
+
+    // Cloner l'élément avec toutes ses enfants (true)
+    var copieDiv = divAAjouter.cloneNode(true);
+
+    // Trouver l'élément avec l'ID "Panning_DivAll"
+    var divPanier = document.getElementById("Panning_DivAll");
+
+    // Ajouter la copie du div à l'élément du panier
+    divPanier.appendChild(copieDiv);
+}
+   
+    
+  
+}
+
+
+function showPanning(){
+    if(Product != 0){
+    var Pann = document.getElementById("Panning_DivAll");
+    if(Pann.style.display === "block"){
+        Pann.style.display = "none"
+    }
+    else{
+        Pann.style.display = "block"
+    }
+}
+}
 
