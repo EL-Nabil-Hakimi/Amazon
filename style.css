@@ -361,34 +361,33 @@ justify-content:center;
 }
 
 #Panning_DivAll{
-    
-    width: 50vw;
-    padding: 2px 0px;
+    padding-top: 10px;
+    width: 20vw;
     position: absolute;
-    right: 0vw;
-    top: 60px;
+    right: 5vw;
+    top: 65px;
     z-index: 1;
-    background-color: #334155;
+    background-color: #ddb30c;
     display: none;
    
 }
 #Panning_Div{
-   
+   padding: 10px 0px;
     cursor: pointer;
     color: white;    
     display: flex;
     justify-content: center;
     border-bottom: 1px solid white;
-    width: 100%;
-    padding: 10px 0px;  
+    width: 100%;    
     transition: 0.3s ease; 
 }
 
 
 #Panning_Div:hover{
-    background-color: #ddb30c;
+    background-color: #b79301;
 }
 #img_Product{
+    margin-right:50px; 
     display: flex;
     align-items: center;
 }
@@ -430,6 +429,16 @@ justify-content:center;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid white;
+}
+
+
+
+#DeleteDiv img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    
+
 }
 
 @media (max-width:1200px){
@@ -502,13 +511,13 @@ justify-content:center;
     }
 
     #Panning_DivAll{
-    
-        width: 100vw;
-        padding: 2px 0px;
+        padding-top: 10px;
+        width: 75vw;
         position: absolute;
+        right: 0vw;
         top: 110px;
         z-index: 1;
-        background-color: #334155;
+        background-color: #ddb30c;
         display: none;
        
     }

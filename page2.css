@@ -98,8 +98,7 @@
 
     }
 
-    
-
+  
     .freeShipping h4{
         padding: 5px 15px;
     }
@@ -111,6 +110,7 @@
         justify-content: center;
 
     }
+
     .ProductsPage2{
         display: flex;
         justify-content: center;

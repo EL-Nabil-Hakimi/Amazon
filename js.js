@@ -127,3 +127,11 @@ function showPanning(){
 }
 }
 
+
+function DeleteDiv(){
+    var divAAjouter = document.getElementById("Panning_Div");
+    divAAjouter.remove();
+    Product--;
+    document.getElementById("NrProduct").innerHTML = Product;
+
+}
