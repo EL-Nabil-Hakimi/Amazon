@@ -362,14 +362,15 @@ justify-content:center;
 
 #Panning_DivAll{
     
-    width: 40vw;
+    width: 50vw;
     padding: 2px 0px;
     position: absolute;
-    right: 2vw;
-    top: 15vh;
+    right: 0vw;
+    top: 60px;
     z-index: 1;
     background-color: #334155;
     display: none;
+   
 }
 #Panning_Div{
    
@@ -398,6 +399,37 @@ justify-content:center;
     border: #FACC15 solid 1px;
     border-radius: 50px;
     margin-right: 30px;
+}
+
+#ImgClosePan{
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 2px white solid;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+    font-size: 20px;
+    margin: 5px 0px;
+    color: white;
+    transition: 0.3s ease;
+    margin-bottom: 20px;
+
+}
+
+#ImgClosePan:hover{
+    background-color: #FACC15;
+    border: 2px rgb(208, 0, 0) solid;
+
+}
+#CloneDiv{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
 }
 
 @media (max-width:1200px){
@@ -466,6 +498,18 @@ justify-content:center;
 
     #fltr button:checked + .section1{
             display: block;
+       
+    }
+
+    #Panning_DivAll{
+    
+        width: 100vw;
+        padding: 2px 0px;
+        position: absolute;
+        top: 110px;
+        z-index: 1;
+        background-color: #334155;
+        display: none;
        
     }
     

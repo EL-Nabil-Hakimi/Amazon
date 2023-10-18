@@ -110,6 +110,10 @@ function n_Product(){
   
 }
 
+function closePadd(){
+    document.getElementById("Panning_DivAll").style.display = "none";
+}
+
 
 function showPanning(){
     if(Product != 0){
