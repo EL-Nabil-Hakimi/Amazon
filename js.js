@@ -32,24 +32,59 @@ function hideenSectionPage2(){
     }
 }
 
-var  x1 = 0;
-var price = 0;
+var count1 = 0;
+var count2 = 0;
+var count3 = 0;
+var Totale = 0;
 
-
-
-function Add_Numbres(){
-    x1++;   
-    price = price+99;
-    document.getElementById("par2").innerHTML = x1;
-    document.getElementById("Totale1").innerHTML ="$ " + price;
+function AddNumber1(){
+    count1++;
+    Totale=Totale+99;
+    document.getElementById("para1").innerHTML = count1;
+    document.getElementById("Totale1").innerHTML ="$ " + Totale;
 }
 
-function Moin_Numbres(){
-    if (x1>0){
-    x1--;   
-    price = price-99;
-    document.getElementById("par2").innerHTML = x1;
-    document.getElementById("Totale1").innerHTML ="$ " + price ;
+function RemoveNumber1(){
+    if(count1>0){
+    count1--;
+    Totale=Totale-99;
+    document.getElementById("para1").innerHTML = count1;
+    document.getElementById("Totale1").innerHTML ="$ " + Totale;
+}
 }
 
+function AddNumber2(){
+    count2++;
+    Totale=Totale+99;
+    document.getElementById("para2").innerHTML = count2;
+    document.getElementById("Totale1").innerHTML ="$ " + Totale;
 }
+
+function RemoveNumber2(){
+    if(count2>0){
+    count2--;
+    Totale=Totale-99;
+    document.getElementById("para2").innerHTML = count2;
+    document.getElementById("Totale1").innerHTML ="$ " + Totale;
+}
+}
+
+
+function AddNumber3(){
+    count3++;
+    Totale=Totale+99;
+    document.getElementById("para3").innerHTML = count3;
+    document.getElementById("Totale1").innerHTML ="$ " + Totale;
+}
+
+function RemoveNumber3(){
+    if(count3>0){
+    count3--;
+    Totale=Totale-99;
+    document.getElementById("para3").innerHTML = count3;
+    document.getElementById("Totale1").innerHTML ="$ " + Totale;
+}
+}
+
+
+
