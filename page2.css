@@ -1,5 +1,5 @@
  main{ 
-    width: 100%;
+    max-width: 100%;
     display: grid;
     justify-content: space-between;
     grid-template-columns: 20vw 80vw;

@@ -35,21 +35,21 @@ function hideenSectionPage2(){
 var  x1 = 0;
 var price = 0;
 
+
+
 function Add_Numbres(){
     x1++;   
-    price = price+1299;
-    document.getElementById("P2").innerHTML = x1;
+    price = price+99;
+    document.getElementById("par2").innerHTML = x1;
     document.getElementById("Totale1").innerHTML ="$ " + price;
 }
 
 function Moin_Numbres(){
     if (x1>0){
     x1--;   
-    price = price-1299;
-    document.getElementById("P2").innerHTML = x1;
+    price = price-99;
+    document.getElementById("par2").innerHTML = x1;
     document.getElementById("Totale1").innerHTML ="$ " + price ;
 }
 
-
 }
-

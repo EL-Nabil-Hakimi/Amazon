@@ -8,7 +8,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 1em;
     margin-bottom: 30px;
     border-bottom: 1px solid rgb(199, 199, 199);
 }
@@ -23,6 +23,8 @@ header{
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    width: 40%;
 }
 .Logo input{
     height: 30px;
@@ -36,8 +38,9 @@ header{
 
 
 .Menu ul{
+    width: 60%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     list-style: none;
     align-items: center;
     text-align: center;
@@ -54,6 +57,7 @@ header{
 
 .Menu ul li{
     padding: 0px 5px;
+
     
   
 }
@@ -72,7 +76,7 @@ header{
 
 
 main{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -264,7 +268,7 @@ a span{
 #sold p{
     padding: 6px 0px;
     opacity: 0.6;
-
+    font-size: 0.8em;
 }
 
 .Add_Card{
@@ -313,13 +317,13 @@ a span{
 }
 
 footer{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #334155;
-    padding: 20px;
+    padding: 1em 0em;
 
 }
 
@@ -361,16 +365,20 @@ justify-content:center;
 
     header{
         flex-direction: column;
-        justify-content: center;
-        width: 95%;
+        align-items: center;
+        
     }
     header .Logo{
         margin-bottom: 20px;
+        width: 100%;
+        
     }
     .Menu ul{
         justify-content: center;
+        width: 100%;
+
     }
-    
+ 
     .secOne{
         grid-template-columns: 100%;
         width: 100%;
