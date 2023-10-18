@@ -5,10 +5,12 @@
 }
 
 #mainPage_Contact{
-    width: 100vw;
+    max-width:  90%;
     display: grid;
     grid-template-columns: 40vw 50vw; 
-    gap: 5vw;
+
+
+   
 }
  .sec_PageContact{
     display: flex;
