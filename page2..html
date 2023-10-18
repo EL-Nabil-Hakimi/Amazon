@@ -10,25 +10,53 @@
 </head>
 <body>
     
- <header>
-    <div class="Logo">        
-        <a href="index.html"><img src="Img/logoAmazon.png" alt="" srcset=""></a>
-        <input type="text" placeholder="Recherche For Product...">
-    </div>
-
+    <header>
+        <div class="Logo">        
+           <a href="index.html"> <img src="Img/logoAmazon.png" alt="" srcset=""></a>
+            <input type="text" placeholder="Recherche For Product...">
+        </div>
             <div class="Menu">        
                 <ul>
                     <a href="index.html"><li id="SingIn">SingIn</li></a>
-                    <a href="index.html"><li>Creat Account</li></a> 
+                    <a href="#"><li>Creat Account</li></a>
                     <li><img src="Img/logoMar.png" alt="" srcset=""></li>
                     <li><h3>MAR</h3></li>
-                    <a href="page4.html"><li><img src="Img/shop.png" alt="" srcset=""></li></a>
-                    <li><h3>5</h3></li>
+                    <li onclick="showPanning()"><img src="Img/shop.png" alt="" srcset=""></li>
+                    <li><h3 id="NrProduct">0</h3></li>
                 </ul>
             </div>
-    </header>
+    
+        </header>
     <main>
-        <section class="sectionPage1_1">
+
+
+        <div id="Panning_DivAll">
+
+            <div id="CloneDiv" onclick="closePadd()">
+                <p id="ImgClosePan">x</p>
+            </div>
+            <div id="Panning_Div">
+    
+            <div id="img_Product">
+                <img src="Img/Product.jpg" alt="" srcset="">
+    
+                <h3>Keyboard <br>
+                    Prix : $ 1200</h3>
+    
+            </div>
+    
+            <div id="DeleteDiv" onclick=" DeleteDiv()">
+                <img src="Img/close1.png" alt="" srcset="">
+            </div>
+               
+        </div>
+    
+        </div>
+
+        
+
+        <button id="btn2" onclick="hideenSectionPage2()">Filter</button>
+        <section class="sectionPage1_1" id="sectionPage1">
             <div class="All_Check">
                 <h2>Marques</h2>
                 <div class="checkbox">
@@ -131,64 +159,17 @@
             </div>
         </section>
         
-        <section id="secProd1">
-            <a href="page3.html">  <article class="ProductsPage2" >
-                <img src="Img/Product.jpg" alt="" srcset="">
-                <h3>$ 1200 <span>$ 2300</span></h3>
-                <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
-                <div id="star">
-                    <img src="Img/star.png" alt="" srcset="">
-                    <p>5.0</p>
-                </div>
-                <div id="sold">
-                    <p>Sold : 120p</p>
-                </div>
-                <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
-                </div>
-            </div>
-            </article></a><a href="page3.html">  <article class="ProductsPage2" >
-                <img src="Img/Product.jpg" alt="" srcset="">
-                <h3>$ 1200 <span>$ 2300</span></h3>
-                <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
-                <div id="star">
-                    <img src="Img/star.png" alt="" srcset="">
-                    <p>5.0</p>
-                </div>
-                <div id="sold">
-                    <p>Sold : 120p</p>
-                </div>
-                <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
-                </div>
-            </div>
-            </article></a>
+        <section class="ProductAll">
 
-            <a href="page3.html">  <article class="ProductsPage2" >
+            
+            
+            <a href="page3.html">  <article class="Products" >
                 <img src="Img/Product.jpg" alt="" srcset="">
                 <h3>$ 1200 <span>$ 2300</span></h3>
                 <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
-                <div id="star">
-                    <img src="Img/star.png" alt="" srcset="">
-                    <p>5.0</p>
-                </div>
-                <div id="sold">
-                    <p>Sold : 120p</p>
-                </div>
-                <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
-                </div>
-            </div>
-            </article></a>
 
-            <a href="page3.html">  <article class="ProductsPage2" >
-                <img src="Img/Product.jpg" alt="" srcset="">
-                <h3>$ 1200 <span>$ 2300</span></h3>
-                <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
+            </a>
+            <div id="infoPro1">
                 <div id="star">
                     <img src="Img/star.png" alt="" srcset="">
                     <p>5.0</p>
@@ -197,52 +178,19 @@
                     <p>Sold : 120p</p>
                 </div>
                 <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
+                    <img onclick="n_Product()" src="Img/Add-to-card.png" alt="" srcset="">
                 </div>
             </div>
-            </article></a>
+            </article>
 
-            <a href="page3.html">  <article class="ProductsPage2" >
-                <img src="Img/Product.jpg" alt="" srcset="">
-                <h3>$ 1200 <span>$ 2300</span></h3>
-                <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
-                <div id="star">
-                    <img src="Img/star.png" alt="" srcset="">
-                    <p>5.0</p>
-                </div>
-                <div id="sold">
-                    <p>Sold : 120p</p>
-                </div>
-                <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
-                </div>
-            </div>
-            </article></a>
 
-            <a href="page3.html">  <article class="ProductsPage2" >
+            <a href="page3.html">  <article class="Products" >
                 <img src="Img/Product.jpg" alt="" srcset="">
                 <h3>$ 1200 <span>$ 2300</span></h3>
                 <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
-                <div id="star">
-                    <img src="Img/star.png" alt="" srcset="">
-                    <p>5.0</p>
-                </div>
-                <div id="sold">
-                    <p>Sold : 120p</p>
-                </div>
-                <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
-                </div>
-            </div>
-            </article></a>
 
-            <a href="page3.html">  <article class="ProductsPage2" >
-                <img src="Img/Product.jpg" alt="" srcset="">
-                <h3>$ 1200 <span>$ 2300</span></h3>
-                <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
+            </a>
+            <div id="infoPro1">
                 <div id="star">
                     <img src="Img/star.png" alt="" srcset="">
                     <p>5.0</p>
@@ -251,34 +199,19 @@
                     <p>Sold : 120p</p>
                 </div>
                 <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
+                    <img onclick="n_Product()" src="Img/Add-to-card.png" alt="" srcset="">
                 </div>
             </div>
-            </article></a>
+            </article>
 
-            <a href="page3.html">  <article class="ProductsPage2" >
-                <img src="Img/Product.jpg" alt="" srcset="">
-                <h3>$ 1200 <span>$ 2300</span></h3>
-                <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
-                <div id="star">
-                    <img src="Img/star.png" alt="" srcset="">
-                    <p>5.0</p>
-                </div>
-                <div id="sold">
-                    <p>Sold : 120p</p>
-                </div>
-                <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
-                </div>
-            </div>
-            </article></a>
 
-            <a href="page3.html">  <article class="ProductsPage2" >
+            <a href="page3.html">  <article class="Products" >
                 <img src="Img/Product.jpg" alt="" srcset="">
                 <h3>$ 1200 <span>$ 2300</span></h3>
                 <p>Hello Nabil Hello Nabil Hello Nabil</p>
-            <div class="infoPro1">
+
+            </a>
+            <div id="infoPro1">
                 <div id="star">
                     <img src="Img/star.png" alt="" srcset="">
                     <p>5.0</p>
@@ -287,11 +220,114 @@
                     <p>Sold : 120p</p>
                 </div>
                 <div class="Add_Card">
-                    <img src="Img/Add-to-card.png" alt="" srcset="">
+                    <img onclick="n_Product()" src="Img/Add-to-card.png" alt="" srcset="">
                 </div>
             </div>
-            </article></a>
+            </article>
+
+
+            <a href="page3.html">  <article class="Products" >
+                <img src="Img/Product.jpg" alt="" srcset="">
+                <h3>$ 1200 <span>$ 2300</span></h3>
+                <p>Hello Nabil Hello Nabil Hello Nabil</p>
+
+            </a>
+            <div id="infoPro1">
+                <div id="star">
+                    <img src="Img/star.png" alt="" srcset="">
+                    <p>5.0</p>
+                </div>
+                <div id="sold">
+                    <p>Sold : 120p</p>
+                </div>
+                <div class="Add_Card">
+                    <img onclick="n_Product()" src="Img/Add-to-card.png" alt="" srcset="">
+                </div>
+            </div>
+            </article>
+
+            <a href="page3.html">  <article class="Products" >
+                <img src="Img/Product.jpg" alt="" srcset="">
+                <h3>$ 1200 <span>$ 2300</span></h3>
+                <p>Hello Nabil Hello Nabil Hello Nabil</p>
+
+            </a>
+            <div id="infoPro1">
+                <div id="star">
+                    <img src="Img/star.png" alt="" srcset="">
+                    <p>5.0</p>
+                </div>
+                <div id="sold">
+                    <p>Sold : 120p</p>
+                </div>
+                <div class="Add_Card">
+                    <img onclick="n_Product()" src="Img/Add-to-card.png" alt="" srcset="">
+                </div>
+            </div>
+            </article>
+
+            <a href="page3.html">  <article class="Products" >
+                <img src="Img/Product.jpg" alt="" srcset="">
+                <h3>$ 1200 <span>$ 2300</span></h3>
+                <p>Hello Nabil Hello Nabil Hello Nabil</p>
+
+            </a>
+            <div id="infoPro1">
+                <div id="star">
+                    <img src="Img/star.png" alt="" srcset="">
+                    <p>5.0</p>
+                </div>
+                <div id="sold">
+                    <p>Sold : 120p</p>
+                </div>
+                <div class="Add_Card">
+                    <img onclick="n_Product()" src="Img/Add-to-card.png" alt="" srcset="">
+                </div>
+            </div>
+            </article>
+
+            <a href="page3.html">  <article class="Products" >
+                <img src="Img/Product.jpg" alt="" srcset="">
+                <h3>$ 1200 <span>$ 2300</span></h3>
+                <p>Hello Nabil Hello Nabil Hello Nabil</p>
+
+            </a>
+            <div id="infoPro1">
+                <div id="star">
+                    <img src="Img/star.png" alt="" srcset="">
+                    <p>5.0</p>
+                </div>
+                <div id="sold">
+                    <p>Sold : 120p</p>
+                </div>
+                <div class="Add_Card">
+                    <img onclick="n_Product()" src="Img/Add-to-card.png" alt="" srcset="">
+                </div>
+            </div>
+            </article>
+
+            <a href="page3.html">  <article class="Products" >
+                <img src="Img/Product.jpg" alt="" srcset="">
+                <h3>$ 1200 <span>$ 2300</span></h3>
+                <p>Hello Nabil Hello Nabil Hello Nabil</p>
+
+            </a>
+            <div id="infoPro1">
+                <div id="star">
+                    <img src="Img/star.png" alt="" srcset="">
+                    <p>5.0</p>
+                </div>
+                <div id="sold">
+                    <p>Sold : 120p</p>
+                </div>
+                <div class="Add_Card">
+                    <img onclick="n_Product()" src="Img/Add-to-card.png" alt="" srcset="">
+                </div>
+            </div>
+            </article>
+            
         </section>
+
 
         <section id="imgCercle">
             <img src="Img/cercle.png" alt="">
@@ -316,6 +352,6 @@
         </ul>
         <p> &copy; by nabil el hakimi</p>
     </footer>
-
+<script src="js.js"></script>
 </body>
 </html>
