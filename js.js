@@ -97,6 +97,8 @@ function n_Product(){
     if(Product >1){
     var divAAjouter = document.getElementById("Panning_Div");
     var copieDiv = divAAjouter.cloneNode(true);
+    var listeProduct = [];
+    listeProduct[Product] = copieDiv;
     var divPanier = document.getElementById("Panning_DivAll");
     divPanier.appendChild(copieDiv);
 }
@@ -111,6 +113,9 @@ function closePadd(){
 
 
 function showPanning(){
+    if(Product == 0){
+        alert("Pannig is empty")
+    }
     if(Product != 0){
     var Pann = document.getElementById("Panning_DivAll");
     if(Pann.style.display === "block"){
