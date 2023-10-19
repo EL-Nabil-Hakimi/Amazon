@@ -75,6 +75,7 @@ header{
 
 
 main{
+    min-height: calc(100vh - 15vh - 13vh);
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -197,6 +198,7 @@ a span{
 
 }
 .ProductAll{
+    margin-top: 30px;
     color: rgb(75, 75, 75);
     margin-left: 20px;
     display: flex;
@@ -369,6 +371,9 @@ justify-content:center;
     z-index: 1;
     background-color: #ddb30c;
     display: none;
+    overflow-y: scroll;
+    height: 50vh;
+    box-shadow: 5px 5px 10px 5px ;
    
 }
 #Panning_Div{
@@ -429,8 +434,14 @@ justify-content:center;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid white;
+    gap: 50px;
 }
-
+#CloneDiv img{
+    width: 35px;
+    position: relative;
+    bottom: 8px;
+   
+}
 
 
 #DeleteDiv img{
