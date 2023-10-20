@@ -74,9 +74,8 @@
     border-radius: 50px;
     text-align: center;
     margin-top: 20px;
-    cursor: pointer;
-
-    
+    cursor: pointer;    
+    user-select: none;
 }
 
 .P1{
