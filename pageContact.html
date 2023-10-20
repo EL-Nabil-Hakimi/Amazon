@@ -10,7 +10,7 @@
 <body id="BodyPageContact">
     <header>
         <div class="Logo">        
-           <a href="index.html"> <img src="Img/logoAmazon.png" alt="" srcset=""></a>
+            <a href="index.html"><img src="Img/logoAmazon.png" alt="" srcset=""></a>
             <input type="text" placeholder="Recherche For Product...">
         </div>
             <div class="Menu">        
@@ -19,12 +19,34 @@
                     <a href="#"><li>Creat Account</li></a>
                     <li><img src="Img/logoMar.png" alt="" srcset=""></li>
                     <li><h3>MAR</h3></li>
-                    <a href="page4.html"><li><img src="Img/shop.png" alt="" srcset=""></li></a>
-                    <li><h3>5</h3></li>
+                    <li onclick="showPanning()"><img src="Img/shop.png" alt="" srcset=""></li>
+                    <li><h3 id="NrProduct">0</h3></li>
                 </ul>
             </div>
-    
         </header>
+        <div id="Panning_DivAll">
+    
+            <div id="CloneDiv" onclick="closePadd()">
+                <p id="ImgClosePan">Close</p>
+                <a id="CheckOut" href="page4.html"><p>CheckOut</p></a>
+            </div>
+            <div id="Panning_Div">
+    
+            <div id="img_Product">
+                <img src="Img/Product.jpg" alt="" srcset="">
+    
+                <h3>Keyboard <br>
+                    Price : $ 1200</h3>
+    
+            </div>
+    
+            <div id="DeleteDiv" onclick=" DeleteDiv()">
+                <img src="Img/close.png" alt="" srcset="">
+            </div>
+               
+        </div>
+    
+        </div>
 
         <main id="mainPage_Contact">
                 <section class="sec_PageContact">
@@ -64,6 +86,6 @@
 
 
         
-    
+    <script src="js.js"></script>
 </body>
 </html>

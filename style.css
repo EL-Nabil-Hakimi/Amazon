@@ -363,7 +363,6 @@ justify-content:center;
 }
 
 #Panning_DivAll{
-    opacity: 0.8;
     width: 30vw;
     position: absolute;
     right: 5vw;
@@ -377,9 +376,6 @@ justify-content:center;
    
 }
 
-#Panning_DivAll:hover{
-    opacity: 1;
-}
 #Panning_Div{
     width: 100%;
      padding: 10px 0px;
