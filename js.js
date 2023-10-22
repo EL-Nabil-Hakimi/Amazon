@@ -30,63 +30,6 @@ function hideenSectionPage2(){
     }
 }
 
-var count1 = 0;
-var count2 = 0;
-var count3 = 0;
-var Totale = 0;
-
-function AddNumber1(){
-    count1++;
-    Totale=Totale+1299;
-    document.getElementById("para1").innerHTML = count1;
-    document.getElementById("Totale1").innerHTML ="$ " + Totale;
-
-    
-}
-
-function RemoveNumber1(){
-    if(count1>0){
-    count1--;
-    Totale=Totale-1299;
-    document.getElementById("para1").innerHTML = count1;
-    document.getElementById("Totale1").innerHTML ="$ " + Totale;
-}
-}
-
-function AddNumber2(){
-    count2++;
-    Totale=Totale+1299;
-    document.getElementById("para2").innerHTML = count2;
-    document.getElementById("Totale1").innerHTML ="$ " + Totale;
-}
-
-function RemoveNumber2(){
-    if(count2>0){
-    count2--;
-    Totale=Totale-1299;
-    document.getElementById("para2").innerHTML = count2;
-    document.getElementById("Totale1").innerHTML ="$ " + Totale;
-}
-}
-
-
-function AddNumber3(){
-    count3++;
-    Totale=Totale+1299;
-    document.getElementById("para3").innerHTML = count3;
-    document.getElementById("Totale1").innerHTML ="$ " + Totale;
-}
-
-function RemoveNumber3(){
-    if(count3>0){
-    count3--;
-    Totale=Totale-1299;
-    document.getElementById("para3").innerHTML = count3;
-    document.getElementById("Totale1").innerHTML ="$ " + Totale;
-    
-}
-}
-
 var Product = 0;
 
 function n_Product() {
@@ -135,18 +78,51 @@ function DeleteDiv(){
 
 window.onload = function () {
     var savedProduct = localStorage.getItem('Product');
+    
     if (savedProduct) {
         Product = parseInt(savedProduct);
         document.getElementById("NrProduct").innerHTML = Product;
     }
-    var count = savedProduct;
+  
     for(var i = 0 ; i<savedProduct-1 ; i++){
         if(savedProduct){
         var divAAjouter = document.getElementById("Panning_Div");
         var copieDiv = divAAjouter.cloneNode(true);
         var divPanier = document.getElementById("Panning_DivAll");
         divPanier.appendChild(copieDiv);
+    
+            
+
     }
-    }
+    }    
+       
     
 }
+// =============================================================
+// Get all "P1" and "P3" elements
+var p1Elements = document.querySelectorAll('.P1');
+var p3Elements = document.querySelectorAll('.P3');
+var Price = 0 ;
+// Add click event listeners to "P1" elements
+p1Elements.forEach(function (element) {
+    element.addEventListener('click', function () {
+        var p2 = element.parentElement.querySelector('.P2');
+        var value = parseInt(p2.textContent);
+        if (value > 0) {
+            p2.textContent = value - 1;
+            Price -= 1299 ;
+            document.getElementById("Totale1").innerHTML = "$ " + Price ;
+        }
+    });
+});
+
+// Add click event listeners to "P3" elements
+p3Elements.forEach(function (element) {
+    element.addEventListener('click', function () {
+        var p2 = element.parentElement.querySelector('.P2');
+        var value = parseInt(p2.textContent);
+        p2.textContent = value + 1;
+        Price += 1299 ;
+        document.getElementById("Totale1").innerHTML ="$ " + Price ;
+    });
+});
