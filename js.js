@@ -83,46 +83,15 @@ window.onload = function () {
         Product = parseInt(savedProduct);
         document.getElementById("NrProduct").innerHTML = Product;
     }
-  
+
+
+    
     for(var i = 0 ; i<savedProduct-1 ; i++){
         if(savedProduct){
         var divAAjouter = document.getElementById("Panning_Div");
         var copieDiv = divAAjouter.cloneNode(true);
         var divPanier = document.getElementById("Panning_DivAll");
-        divPanier.appendChild(copieDiv);
-    
-            
-
-    }
-    }    
-       
-    
+        divPanier.appendChild(copieDiv);      
 }
-// =============================================================
-// Get all "P1" and "P3" elements
-var p1Elements = document.querySelectorAll('.P1');
-var p3Elements = document.querySelectorAll('.P3');
-var Price = 0 ;
-// Add click event listeners to "P1" elements
-p1Elements.forEach(function (element) {
-    element.addEventListener('click', function () {
-        var p2 = element.parentElement.querySelector('.P2');
-        var value = parseInt(p2.textContent);
-        if (value > 0) {
-            p2.textContent = value - 1;
-            Price -= 1299 ;
-            document.getElementById("Totale1").innerHTML = "$ " + Price ;
-        }
-    });
-});
-
-// Add click event listeners to "P3" elements
-p3Elements.forEach(function (element) {
-    element.addEventListener('click', function () {
-        var p2 = element.parentElement.querySelector('.P2');
-        var value = parseInt(p2.textContent);
-        p2.textContent = value + 1;
-        Price += 1299 ;
-        document.getElementById("Totale1").innerHTML ="$ " + Price ;
-    });
-});
+    }    
+}
