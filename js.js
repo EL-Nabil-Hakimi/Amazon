@@ -48,6 +48,10 @@ function n_Product() {
 
 function closePadd(){
     document.getElementById("Panning_DivAll").style.display = "none";
+    var body = document.querySelector("#Body1");
+        body.style. filter = "none";
+        body.style.opacity = "1";
+
 }
 
 
@@ -59,9 +63,17 @@ function showPanning(){
     var Pann = document.getElementById("Panning_DivAll");
     if(Pann.style.display === "block"){
         Pann.style.display = "none"
+        var body = document.querySelector("#Body1");
+        body.style. filter = "none";
+        body.style.opacity = "1";
     }
     else{
         Pann.style.display = "block"
+        var body = document.querySelector("#Body1");
+        body.style. filter = "blur(5px)";
+        body.style.opacity = "0.3";
+
+       
     }
 }
 }
@@ -92,6 +104,7 @@ window.onload = function () {
         var copieDiv = divAAjouter.cloneNode(true);
         var divPanier = document.getElementById("Panning_DivAll");
         divPanier.appendChild(copieDiv);      
+
 }
     }    
 }

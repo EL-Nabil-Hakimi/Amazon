@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Img/logoAmazon.png" type="image/x-icon">
     <link rel="stylesheet" href="pageContact.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Contact</title>
 </head>
 <body id="BodyPageContact">
+
+    <div id="Panning_DivAll">
+    
+        <div id="CloneDiv" onclick="closePadd()">
+            <p id="ImgClosePan">Close</p>
+            <a id="CheckOut" href="page4.html"><p>CheckOut</p></a>
+        </div>
+        <div id="Panning_Div">
+
+        <div id="img_Product">
+            <img src="Img/Product.jpg" alt="" srcset="">
+
+            <h3>Keyboard <br>
+                Price : $ 1200</h3>
+
+        </div>
+
+        <div id="DeleteDiv" onclick=" DeleteDiv()">
+            <img src="Img/close.png" alt="" srcset="">
+        </div>
+           
+    </div>
+
+    </div>
+
+
+    <div  id="Body1">
     <header>
         <div class="Logo">        
             <a href="index.html"><img src="Img/logoAmazon.png" alt="" srcset=""></a>
@@ -24,47 +52,21 @@
                 </ul>
             </div>
         </header>
-        <div id="Panning_DivAll">
-    
-            <div id="CloneDiv" onclick="closePadd()">
-                <p id="ImgClosePan">Close</p>
-                <a id="CheckOut" href="page4.html"><p>CheckOut</p></a>
-            </div>
-            <div id="Panning_Div">
-    
-            <div id="img_Product">
-                <img src="Img/Product.jpg" alt="" srcset="">
-    
-                <h3>Keyboard <br>
-                    Price : $ 1200</h3>
-    
-            </div>
-    
-            <div id="DeleteDiv" onclick=" DeleteDiv()">
-                <img src="Img/close.png" alt="" srcset="">
-            </div>
-               
-        </div>
-    
-        </div>
+       
 
         <main id="mainPage_Contact">
                 <section class="sec_PageContact">
-                    <p>Welcome to our contact page! We are happy 
-                        to help you and answer all your questions.
-                         Your opinion and comments are important
-                          to us.
-
-                        If you have any concerns, suggestions, 
-                        or would like to learn more about our
-                         products or services, please do not 
-                         hesitate to contact us. Simply fill 
-                         out the form below, and we will get 
-                         back to you as soon as possible.</p>
+                    <!-- Image Contact -->
+                    <img src="Img/imgContact.png" alt="" srcset="">
+                    
                 </section>
 
                 <section class="sec_PageContact">
                     <form action="">
+                        <div  id="ImgUser">
+                        <img  src="Img/user.png" alt="">
+                    </div>
+                        <h1>Contact Us</h1>
                         <input type="text" placeholder="Nom" required>
                         <input type="text" placeholder="Preom" required>
                         <textarea cols="30" rows="10" placeholder="Message"></textarea>
@@ -84,7 +86,7 @@
             <p> &copy; by nabil el hakimi</p>
         </footer>
 
-
+    </div>
         
     <script src="js.js"></script>
 </body>
