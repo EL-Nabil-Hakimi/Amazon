@@ -1,113 +1,127 @@
-#BodyPageContact{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+header{
+    margin: 0px ;
+   
+}
+
+main{
+    margin: 0px;
+    padding: 0px;
 }
 
 #mainPage_Contact{
-    max-width:  90%;
+    margin-left:1em;
+
+    margin-top: 5px;
+    width: 95vw;
     display: grid;
-    grid-template-columns: 40vw 50vw; 
-
-
-   
-}
- .sec_PageContact{
-    display: flex;
-    align-items: center;
+    grid-template-columns:  60% 30%;
     justify-content: center;
- }
+    align-items: center;  
+    gap: 5%;
+    margin-bottom: 30px;
+    margin-top: 20px;
 
-#mainPage_Contact form{
+}
+.sec_PageContact img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px ;
+
+}
+
+.sec_PageContact form{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 3em;
-    padding: 10px 10px;
-    width: 80%;
-}
+ 
 
-#mainPage_Contact form input{
-    width: 80%;
-    margin:0.5em 0px;
-    height: 3em;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 5px 5px;
 
 }
 
-
-#mainPage_Contact form  textarea{
-    resize: none;
-    width: 80%;
-    margin:0.5em 0px;
-    padding: 0px 0.5em;
-    border-radius: 5px;
-    border: 1 black solid;
-    padding: 5px 5px;
-    margin-bottom: 20px;
-}
-
-
-#mainPage_Contact form #btnSub{
-    background-color: #FACC15;
-    border: none;
-    border-radius: 5px;
+.sec_PageContact form input{
     height: 40px;
-    width: 10em;
+    border: none;
+    border-bottom: 1px solid rgb(236, 101, 12);
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 15px;
+
+
+}
+
+.sec_PageContact form input:hover , .sec_PageContact form textarea:hover{
+    background-color: rgb(239, 239, 239);
+}
+
+.sec_PageContact form textarea{
+    resize: none;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid fdad11;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(236, 101, 12);
+
+
+
+}
+
+.sec_PageContact form h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#btnSub{
+    border: none;
     color: white;
-    font-weight: bold;
-    box-shadow: 0px 0px 10px 2px black;
-
-}
-
-.sec_PageContact p {
-        text-align: justify;
-        position: relative;
-        bottom: 100px;    
+    background-color: #fdad11;
+    cursor: pointer;
+    margin-top: 1em;
+    box-shadow: 0px 0px 5px 1px black;
+    margin-bottom: 50px;
 }
 
 
-@media (max-width : 1200px){
+#ImgUser{ 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+#ImgUser img{
+    width: 150px;
+    cursor: pointer;
+    box-shadow: none;
+
+}
+#btnSub:hover{
+    background-color: rgb(255, 104, 3);
+    box-shadow: none;
+
+}
+
+
+
+
+@media (max-width:1200px){
     #mainPage_Contact{
-        width: 100vw;
+        margin-left:0.5em;
+        margin-top: 5px;
+        width: 95vw;
         display: grid;
-        grid-template-columns: 100vw;     }
-
-
-        .sec_PageContact p {
-            text-align: justify;
-            position: relative;
-            bottom: 0px;
-            width: 70%;
-            
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;  
+        margin-bottom: 30px;
+        margin-top: 20px;
+    
     }
 
 
-    
-#mainPage_Contact form input{
-    width: 80%;
-    margin:0.5em 0px;
-    height: 2em;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding: 5px 5px;
-
-}
-
-
-#mainPage_Contact form  textarea{
-    resize: none;
-    width: 80%;
-    margin:0.5em 0px;
-    padding: 0px 0.5em;
-    border-radius: 5px;
-    border: 1 black solid;
-    padding: 5px 5px;
-    margin-bottom: 20px;
-}
-
-    
+   
 }
