@@ -64,14 +64,14 @@
                 </section>
 
                 <section class="sec_PageContact">
-                    <form action="">
-                        <div  id="ImgUser">
-                        <img  src="Img/user.png" alt="">
-                    </div>
+                    <form id="contactForm" action="">
+                        <div id="ImgUser">
+                            <img src="Img/user.png" alt="">
+                        </div>
                         <h1>Contact Us</h1>
-                        <input type="text" placeholder="Nom" required>
-                        <input type="text" placeholder="Preom" required>
-                        <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                        <input id="firstName" type="text" placeholder="Nom" >
+                        <input id="lastName" type="text" placeholder="Prénom" >
+                        <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
                         <input id="btnSub" type="submit" value="Envoyer">
                     </form>
                 </section>
@@ -91,5 +91,6 @@
     </div>
         
     <script src="js.js"></script>
+    <script src="jsPageContact.js"></script>
 </body>
 </html>

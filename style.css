@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-   
+    box-sizing: content-box;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -534,10 +534,11 @@ justify-content:center;
         padding-top: 0px;
         width: 75vw;
         position: fixed;
-        right: 0vw;
+        right: 5vw;
         top: 110px;
         z-index: 1;
         display: none;
+        padding: 0px 10px;
        
     }
     

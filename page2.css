@@ -1,5 +1,5 @@
  main{ 
-    max-width: 100%;
+    max-width: 98%;
     display: grid;
     justify-content: space-between;
     grid-template-columns: 20vw 80vw;
@@ -7,7 +7,7 @@
 }
 
 .sectionPage1_1{
-
+    box-sizing: content-box;
    width: 20vw;
    display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     font-weight: bold;
 }
 .sectionPage1_2{
-
+    box-sizing: content-box;
   width: 80vw;
 
 }
@@ -147,7 +147,7 @@
         }
 
         .sectionPage1_1{
-            width: 100%;
+            width: 98%;
             display: none;
             gap: 20px;
             grid-template-columns: 30vw 30vw;
@@ -165,7 +165,7 @@
         }
         .sectionPage1_2{
             
-            width: 100%;
+            width: 98%;
             grid-template-columns: 100vw;
             justify-content: center;
         }
@@ -185,11 +185,13 @@
         #btn2{
             display: block;
             border: none;
-            padding: 10px ;
-            background-color: #CA8A04;
+            background-color: #ddb30c;
             color: white;
             font-size: 18px;
+            border-radius: 5px;
             font-weight: bold;
             width:95vw;
+            height: 35px;
+
         }
     }

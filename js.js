@@ -55,6 +55,8 @@ function closePadd(){
 }
 
 
+
+
 function showPanning(){
     if(Product == 0){
         alert("Pannig is empty")
@@ -77,6 +79,8 @@ function showPanning(){
     }
 }
 }
+
+
 
 
 function DeleteDiv(){
